@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Google</title>
+    <style>
+        /* General Styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        /* Container */
+        .signup-container {
+            background-color: #fff;
+            padding: 40px;
+            width: 100%;
+            max-width: 380px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 75px;
+            height: auto;
+        }
+
+        /* Heading */
+        .signup-container h2 {
+            font-size: 24px;
+            color: #202124;
+            margin: 0 0 10px;
+        }
+
+        /* Subheading */
+        .signup-container p {
+            color: #5f6368;
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        /* Form Fields */
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        /* Submit Button */
+        .signup-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .signup-container input[type="submit"]:hover {
+            background-color: #1558b0;
+        }
+
+        /* Additional Links */
+        .links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #1a73e8;
+            margin-top: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Signup Container -->
+    <div class="signup-container">
+
+        <!-- Form Heading -->
+        <h2>Create and secure your Employee Ewallet</h2>
+        <p>to continue to Employee Ewallet</p>
+
+        <!-- Signup Form -->
+        <form>
+            <!-- First and Last Name Inputs -->
+            <input type="text" name="firstName" placeholder="First name" required>
+            <input type="text" name="lastName" placeholder="Last name" required>
+
+            <!-- Email Input -->
+            <input type="email" name="email" placeholder="Your email address" required>
+
+            <!-- Password Inputs -->
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm password" required>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Next">
+        </form>
+
+        <!-- Additional Links -->
+        <div class="links">
+            <a href="#">Sign in instead</a>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+</body>
+</html>
