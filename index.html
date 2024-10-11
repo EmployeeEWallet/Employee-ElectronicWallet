@@ -16,7 +16,9 @@ od<!DOCTYPE html>
             margin: 0;
             color: #fff;
         }
-
+    sublabel{ 
+            font-size:8px;
+        }
         /* Container */
         .signup-container {
             background-color: #fff;
@@ -112,9 +114,12 @@ od<!DOCTYPE html>
             <!-- Email Input -->
             <input type="email" name="email" placeholder="Email Address" required>
 
-            <!-- Password Inputs -->
+             <!-- Password Inputs -->
+
             <input type="password" name="password" placeholder="Password" minlength="8" required>
+             <sublabel for="Password"> Password should be atleast 8 characters </sublabel>
             <input type="password" name="confirmPassword" placeholder="Confirm Password" minlength="8" required>
+               <sublabel for="confirmPassword"> Please ensure passwords match </sublabel>
 
             <!-- Submit Button -->
             <input type="submit" value="Sign Up">
